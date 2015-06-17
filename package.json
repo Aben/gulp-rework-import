@@ -1,0 +1,32 @@
+{
+  "name": "gulp-rework-import",
+  "version": "0.0.1",
+  "description": "A gulp plugin for import several CSS files into a single file, Import each CSS file only once.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aben/gulp-rework-import.git"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "css",
+    "rework-import",
+    "css-import"
+  ],
+  "author": "Aben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aben/gulp-rework-import/issues"
+  },
+  "homepage": "https://github.com/Aben/gulp-rework-import",
+  "dependencies": {
+    "gulp-util": "^3.0.5",
+    "rework": "^1.0.1",
+    "rework-import": "git://github.com/Aben/rework-import",
+    "through2": "^2.0.0"
+  }
+}
