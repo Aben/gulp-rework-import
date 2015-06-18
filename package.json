@@ -1,6 +1,6 @@
 {
   "name": "gulp-rework-import",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A gulp plugin for import several CSS files into a single file, Import each CSS file only once.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "gulp",
-    "plugin",
+    "gulp plugin",
     "css",
     "rework-import",
     "css-import"
