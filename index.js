@@ -2,6 +2,7 @@ var gutil = require('gulp-util');
 var through = require('through2');
 var cssImprt = require('rework-import');
 var rework = require('rework');
+var path = require('path');
 
 // Consts
 var PLUGIN_NAME = 'gulp-rework-import';
