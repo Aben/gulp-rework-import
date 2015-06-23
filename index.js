@@ -16,9 +16,14 @@ module.exports = function() {
       }
 
       if (file.isBuffer()) {
-          var css = rework(file.contents.toString(enc)).use(cssImprt({ path: path.dirname(file.path) }))
-          file.contents = new Buffer(css.toString(enc))
+            try {
+                var css = rework(file.contents.toString(enc)).use(cssImprt({ path: path.dirname(file.path) }))
+                file.contents = new Buffer(css.toString(enc))
+            } catch (err) {
+                this.emit('error', new gutil.PluginError(PLUGIN_NAME, err, {fileName: file.path}));
+            }
       }
+
       // make sure the file goes through the next gulp plugin
       this.push(file);
       // tell the stream engine that we are done with this file
